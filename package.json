@@ -2,6 +2,7 @@
     "name": "command-palette",
     "version": "0.0.0",
     "description": "Command palette",
+    "main": "src/index",
     "engines": {
         "codebox": ">=1.0.0"
     }

@@ -1,5 +1,8 @@
-define(function() {
+define([
+    "src/views/palette"
+], function(Palette) {
     var commands = codebox.require("core/commands");
+    var dialogs = codebox.require("utils/dialogs");
 
     commands.register({
         id: "palette.open",
@@ -8,8 +11,7 @@ define(function() {
             "mod+shift+p"
         ],
         run: function() {
-
-
+            return dialogs.open(Palette);
         }
     });
 });
