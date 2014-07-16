@@ -1,4 +1,3 @@
-package-command-palette
-=======================
+# Command Palette
 
-Command palette in the IDE
+This package contains the command palette that can be opened using `Cmd+Shift+P` or `Ctrl+Shift+P`.

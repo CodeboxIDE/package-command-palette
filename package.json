@@ -1,0 +1,8 @@
+{
+    "name": "command-palette",
+    "version": "0.0.0",
+    "description": "Command palette",
+    "engines": {
+        "codebox": ">=1.0.0"
+    }
+}
