@@ -1,6 +1,6 @@
 define([
-    "src/views/palette"
-], function(Palette) {
+    "text!src/templates/command.html"
+], function(commandTemplate) {
     var commands = codebox.require("core/commands");
     var dialogs = codebox.require("utils/dialogs");
 
@@ -11,7 +11,9 @@ define([
             "mod+shift+p"
         ],
         run: function() {
-            return dialogs.open(Palette);
+            return dialogs.list(commands, {
+                template: commandTemplate
+            });
         }
     });
 });
