@@ -13,6 +13,9 @@ define([
         run: function() {
             return dialogs.list(commands, {
                 template: commandTemplate
+            })
+            .then(function(command) {
+                return command.run();
             });
         }
     });
