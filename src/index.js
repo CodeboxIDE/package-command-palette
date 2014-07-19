@@ -12,7 +12,10 @@ define([
         ],
         run: function() {
             return dialogs.list(commands, {
-                template: commandTemplate
+                template: commandTemplate,
+                filter: function(command) {
+                    return command.get("palette") !== false && command.isValidContext();
+                }
             })
             .then(function(command) {
                 return command.run();
