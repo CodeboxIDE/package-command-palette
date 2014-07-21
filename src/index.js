@@ -6,10 +6,11 @@ define([
 
     commands.register({
         id: "palette.open",
-        title: "Open Command Palette",
+        title: "Command Palette: Open",
         shortcuts: [
             "mod+shift+p"
         ],
+        palette: false,
         run: function() {
             return dialogs.list(commands, {
                 template: commandTemplate,
