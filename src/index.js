@@ -10,12 +10,12 @@ define([
         shortcuts: [
             "mod+shift+p"
         ],
-        palette: false,
+        hidden: true,
         run: function() {
             return dialogs.list(commands, {
                 template: commandTemplate,
                 filter: function(command) {
-                    return command.get("palette") !== false && command.isValidContext();
+                    return command.get("hidden") !== true && command.isValidContext();
                 }
             })
             .then(function(command) {
