@@ -2,7 +2,6 @@
     "name": "command-palette",
     "version": "0.0.0",
     "description": "Command palette",
-    "main": "src/index",
     "browser": "./src/index.js",
     "engines": {
         "codebox": ">=1.0.0"
