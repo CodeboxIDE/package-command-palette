@@ -14,7 +14,7 @@ commands.register({
         return dialogs.list(commands, {
             template: commandTemplate,
             filter: function(command) {
-                return command.get("hidden") !== true && command.isValidContext();
+                return command.get("hidden") !== true && command.isRunnable();
             }
         })
         .then(function(command) {
